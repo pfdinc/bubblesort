@@ -24,25 +24,19 @@ namespace bubbleSort
 
             for (int lastunsortedArray = lenghtIntArray ; lastunsortedArray > 0; lastunsortedArray--)
             {
-
                 for (int i = 0; i < lenghtIntArray -1; i++)
                 {
                     //compairs the index and the next index in the array array 
                     if (intArray[i] > intArray[i+1])
                     {
-
                         swap(intArray, i, i + 1);
-
                     }
-
                 }
-
             }
             print(intArray);
-
-
         }
 
+        
         public static void bubblesortdDescending(int[] intArray)
         {
 
@@ -56,28 +50,22 @@ namespace bubbleSort
 
                     if (intArray[i] < intArray[i + 1])
                     {
-
                         swap(intArray, i, i + 1);
-
                     }
-
                 }
-
             }
             print(intArray);
-
-
         }
 
+        
         public static void print(int[] arr){
-
+            
             for (int i = 0; i < arr.Length; i++)
                 Console.Write(arr[i] + "  ");
             
             Console.WriteLine();
-
-
         } 
+        
 
         public static void swap(int[] arrayToSwap, int x, int y ){
 
